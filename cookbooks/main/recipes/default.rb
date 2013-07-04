@@ -4,6 +4,13 @@
 #  }
 #end
 require_recipe "packages"
+
+File.open("/etc/php/fpm-php5.4/php.ini", "w") do |f|
+    f.write "//some data"
+end
+
+#sudo /etc/init.d/php-fpm restart
+
 # uncomment to turn on thinking sphinx/ultra sphinx. Remember to edit cookbooks/sphinx/recipes/default.rb first!
 # include_recipe "sphinx"
 
