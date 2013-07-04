@@ -6,10 +6,10 @@
 require_recipe "packages"
 
 File.open("/etc/php/fpm-php5.4/php.ini", "a") do |f|
-    f.write "extension=geoip.so\ndate.timezone = date.timezone = \"Europe/Riga\""
+    f.write "\nextension=geoip.so\ndate.timezone = \"Europe/Riga\""
 end
 File.open("/etc/php/cli-php5.4/php.ini", "a") do |f|
-    f.write "extension=geoip.so\ndate.timezone = date.timezone = \"Europe/Riga\""
+    f.write "\nextension=geoip.so\ndate.timezone = \"Europe/Riga\""
 end
 
 #sudo /etc/init.d/php-fpm restart
