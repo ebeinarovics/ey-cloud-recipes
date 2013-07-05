@@ -6,5 +6,6 @@
 #
 # Examples below:
 
-default[:packages] = [{:name => "dev-php/pecl-ssh2", :version => "0.11.3-r1"},
-                    {:name => "dev-libs/geoip", :version => "1.5.0"}]
+default[:packages] = [{:name => "dev-php/pecl-ssh2", :version => "0.11.3-r1"}]
+#default[:packages] = [{:name => "dev-php/pecl-ssh2", :version => "0.11.3-r1"},
+#                   {:name => "dev-libs/geoip", :version => "1.5.0"}]
